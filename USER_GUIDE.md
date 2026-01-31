@@ -1,6 +1,6 @@
 # CryptoVault Pro — User Guide (10 Pages)
 
-This guide is written to help BOTH non‑technical buyers and developers quickly customize, preview, and deploy the CryptoVault Pro landing template while minimizing support tickets. Each page maps to a single topic with practical steps, code samples, and references to files in this project/template.
+This guide is written to help quickly customize, preview, and deploy the CryptoVault Pro landing template while minimizing support tickets. Each page maps to a single topic with practical steps, code samples, and references to files in this project/template.
 
 ---
 

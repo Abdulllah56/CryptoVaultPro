@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Shield, Menu, X, TrendingUp, ChevronDown } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from './UI';
 import { CryptoCoin } from '../types';
 
@@ -24,10 +24,8 @@ export const Navigation: React.FC<NavigationProps> = ({ coins }) => {
       <div className={`transition-all duration-500 ease-in-out ${isScrolled || isMobileMenuOpen ? 'bg-dark/80 backdrop-blur-xl border-b border-white/5 py-4' : 'bg-transparent py-6'}`}>
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3 group cursor-pointer">
-              <div className="w-11 h-11 bg-white text-dark rounded-xl flex items-center justify-center shadow-[0_0_20px_rgba(255,255,255,0.2)] group-hover:scale-105 transition-transform duration-500">
-                <Shield className="w-6 h-6" fill="currentColor" />
-              </div>
+            <div className="flex items-center space-x-4 group cursor-pointer">
+              <img src="/favicon.ico" alt="CryptoVault Pro Logo" className="w-11 h-11 rounded-xl group-hover:scale-105 transition-transform duration-500" />
               <div className="flex flex-col">
                 <span className="text-xl font-bold font-display text-white tracking-tighter leading-none">
                   CryptoVault <span className="text-primary-400">Pro</span>
@@ -38,8 +36,8 @@ export const Navigation: React.FC<NavigationProps> = ({ coins }) => {
 
             <nav className="hidden lg:flex items-center space-x-10">
               {['Markets', 'Institutions', 'Security', 'Academy'].map((item) => (
-                <a 
-                  key={item} 
+                <a
+                  key={item}
                   href={`#${item.toLowerCase()}`}
                   className="text-xs uppercase tracking-[0.2em] font-bold text-gray-400 hover:text-white transition-colors"
                 >
@@ -69,8 +67,8 @@ export const Navigation: React.FC<NavigationProps> = ({ coins }) => {
             </a>
           ))}
           <div className="pt-8 border-t border-white/5 space-y-6">
-             <Button className="w-full h-16 text-lg">Create Account</Button>
-             <button className="w-full text-center text-gray-400 font-bold uppercase tracking-widest">Sign In</button>
+            <Button className="w-full h-16 text-lg">Create Account</Button>
+            <button className="w-full text-center text-gray-400 font-bold uppercase tracking-widest">Sign In</button>
           </div>
         </div>
       </div>
