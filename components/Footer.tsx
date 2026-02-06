@@ -5,7 +5,7 @@ import { Button } from './UI';
 export const Footer: React.FC = () => {
   return (
     <>
-       <section className="py-32 relative overflow-hidden bg-dark-lighter border-t border-white/5 text-center">
+      <section className="py-32 relative overflow-hidden bg-dark-lighter border-t border-white/5 text-center">
         <div className="container mx-auto px-6 relative z-10 max-w-4xl">
           <h2 className="text-5xl md:text-7xl font-bold font-display text-white mb-8 tracking-tighter leading-tight">
             Start your <span className="text-primary-400">crypto journey.</span>
@@ -34,11 +34,14 @@ export const Footer: React.FC = () => {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-20">
             <div className="col-span-2 lg:col-span-2">
-              <div className="flex items-center space-x-3 mb-8">
-                <div className="w-10 h-10 bg-white text-dark rounded-lg flex items-center justify-center">
-                  <Shield size={20} fill="currentColor" />
+              <div className="flex items-center space-x-4 mb-8">
+                <img src="/favicon.ico" alt="CryptoVault Pro Logo" className="w-11 h-11 rounded-xl" />
+                <div className="flex flex-col">
+                  <span className="text-2xl font-bold text-white tracking-tighter leading-none">
+                    CryptoVault <span className="text-primary-400">Pro</span>
+                  </span>
+                  <span className="text-[8px] uppercase tracking-[0.3em] font-bold text-gray-500 mt-1">Institutional v2.4</span>
                 </div>
-                <span className="text-2xl font-bold text-white tracking-tighter">CryptoVault Pro</span>
               </div>
               <p className="text-gray-400 font-light mb-8 max-w-sm leading-relaxed">
                 The preferred execution venue for institutional crypto trading. Built with precision, secured by architecture.
@@ -51,7 +54,7 @@ export const Footer: React.FC = () => {
                 ))}
               </div>
             </div>
-            
+
             <div className="col-span-1">
               <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-widest">Platform</h4>
               <ul className="space-y-4 text-sm text-gray-500">
@@ -60,7 +63,7 @@ export const Footer: React.FC = () => {
                 ))}
               </ul>
             </div>
-            
+
             <div className="col-span-1">
               <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-widest">Resources</h4>
               <ul className="space-y-4 text-sm text-gray-500">
